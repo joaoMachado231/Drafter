@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteador</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>Sorteador</header>
+
+    <section id="sec">
+        <div>
+            <p>Nome do jogador: <input type="text" id="txtplayer">
+            <input type="button" value="Adicionar" onclick="TabInsert.addPlayer()"><br>
+            </p>
+            <div id="players" >
+                <p>Jogadores:</p>
+            </div>
+            <abbr title="Remove ultimo jogador"><input type="button" value="Remover" id="remove" onclick="Utils.removeLast()"></abbr>
+            <abbr title="Apaga a lista"><input type="button" value="Apagar lista" id="reset" onclick="Utils.resetPlayersList()"></abbr> 
+            <p>Quantidade de times: <input type="number" id="txtteams"></p>
+            <p>Quantidade de jogadores por time: <input type="number" id="txtqttplayer"></p>
+            <input type="button" value="Sortear" onclick="setTeams.generateTeamsHTML()">
+        </div>
+        
+        <div id="tables">
+            
+        </div>
+        
+    </section>
+
+    <footer>
+        <img src="icone-github.png" alt="GitHub logo">
+        <a href="https://github.com/Joao-Pedro-Machado?tab=repositories" target="_blank">GitHub</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

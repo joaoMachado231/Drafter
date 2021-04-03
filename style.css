@@ -1,0 +1,42 @@
+/* HMTL */
+body {
+    background: rgb(14, 141, 150);
+    font-family: 'Anton', sans-serif;
+    color: white;
+}
+
+section{
+    color: black;
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
+}
+
+header{
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+footer{
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+
+/*divs*/
+
+div#tables{
+    display: flex;
+    margin-top: 20px;
+}
+
+/*Tables*/
+table.teamTable{
+    margin-right: 20px;
+}
